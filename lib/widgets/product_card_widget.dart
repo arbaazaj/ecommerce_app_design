@@ -36,11 +36,14 @@ class ProductCard extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.network(
-                productImage,
-                height: 180.0,
-                fit: BoxFit.cover,
-                width: MediaQuery.of(context).size.width,
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10.0),
+                child: Image.network(
+                  productImage,
+                  height: 180.0,
+                  fit: BoxFit.cover,
+                  width: MediaQuery.of(context).size.width,
+                ),
               ),
               const SizedBox(
                 height: 5.0,
@@ -53,36 +56,51 @@ class ProductCard extends StatelessWidget {
               const SizedBox(
                 height: 5.0,
               ),
-              Text('Stock: $productStock',
+              Text(
+                'Stock: $productStock',
                 style: const TextStyle(
                   color: Colors.grey,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               const SizedBox(height: 15.0),
+              // Color and price row.
               Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // ListView.builder(
-                  //   shrinkWrap: true,
-                  //   itemCount: colors.length,
-                  //   itemBuilder: (context, index) {
-                  //     final chip = colors[index];
-                  //     return ColorChipWidget(
-                  //       color: chip.color,
-                  //       borderWidth: chip.borderWidth,
-                  //       borderColor: chip.borderColor,
-                  //     );
-                  //   },
-                  // ),
-                  const Spacer(),
+                  Expanded(
+                    child: SizedBox(
+                      height: 30,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        shrinkWrap: true,
+                        children: colors
+                            .map(
+                              (color) => ColorChipWidget(
+                                borderRadius: BorderRadius.circular(4.0),
+                                chipHeight: 20.0,
+                                chipWidth: 20.0,
+                                color: color.color,
+                                borderWidth: color.borderWidth,
+                                borderColor: color.borderColor,
+                              ),
+                            )
+                            .toList(),
+                      ),
+                    ),
+                  ),
+                  //const Spacer(),
                   Text(
                     '\$$productPrice',
                     style: const TextStyle(
-                        fontSize: 18.0, fontWeight: FontWeight.bold),
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ],
               ),
+
             ],
           ),
         ),

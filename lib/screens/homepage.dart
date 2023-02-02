@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/models/product.dart';
+import 'package:ecommerce_app/screens/product_details.dart';
 import 'package:ecommerce_app/themes/colors.dart';
 import 'package:ecommerce_app/widgets/product_card_widget.dart';
 import 'package:flutter/material.dart';
@@ -91,7 +92,7 @@ class HomePage extends StatelessWidget {
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 0.0,
-            childAspectRatio: 2/3,
+            childAspectRatio: 2 / 3,
             mainAxisSpacing: 0.0,
           ),
           itemCount: productList.length,
@@ -103,7 +104,14 @@ class HomePage extends StatelessWidget {
               productPrice: product.productPrice,
               productStock: product.productStock,
               colors: product.colors,
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProductDetails(product: product),
+                  ),
+                );
+              },
             );
           },
         ),

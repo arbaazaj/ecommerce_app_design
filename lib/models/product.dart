@@ -18,17 +18,26 @@ final productList = [
     'Cottages Sofa',
     '32',
     [
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         color: Colors.white,
         borderColor: Colors.grey,
         borderWidth: 1,
       ),
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: greenColor,
         borderWidth: 0,
       ),
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: orangeColor,
         borderWidth: 0,
@@ -41,12 +50,18 @@ final productList = [
     'Makumbe Set',
     '21',
     [
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: darkGreyColor,
         borderWidth: 0,
       ),
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: lightGreenColor,
         borderWidth: 0,
@@ -59,12 +74,18 @@ final productList = [
       'Rumba Chair Set',
       '10',
       [
-        const ColorChipWidget(
+        ColorChipWidget(
+          borderRadius: BorderRadius.circular(4.0),
+          chipHeight: 20.0,
+          chipWidth: 20.0,
           borderColor: Colors.transparent,
           color: darkBrownColor,
           borderWidth: 0,
         ),
-        const ColorChipWidget(
+        ColorChipWidget(
+          borderRadius: BorderRadius.circular(4.0),
+          chipHeight: 20.0,
+          chipWidth: 20.0,
           borderColor: Colors.transparent,
           color: lightCreamColor,
           borderWidth: 0,
@@ -76,12 +97,18 @@ final productList = [
     'Vintage Desk',
     '5',
     [
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: lightCreamColor,
         borderWidth: 0,
       ),
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: darkGreyColor,
         borderWidth: 0,
@@ -94,12 +121,18 @@ final productList = [
     'Antique Clock',
     '2',
     [
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: greenColor,
         borderWidth: 0,
       ),
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: orangeColor,
         borderWidth: 0,
@@ -112,12 +145,18 @@ final productList = [
     'Modern Table',
     '18',
     [
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: darkGreyColor,
         borderWidth: 0,
       ),
-      const ColorChipWidget(
+      ColorChipWidget(
+        borderRadius: BorderRadius.circular(4.0),
+        chipHeight: 20.0,
+        chipWidth: 20.0,
         borderColor: Colors.transparent,
         color: lightCreamColor,
         borderWidth: 0,
